@@ -16,5 +16,9 @@ def take_a_number(line,name)
 end 
 
 def now_serving(line)
+  if line.size == 0
+    return puts "There is nobody waiting to be served!"
+  end 
+  
   
 end
