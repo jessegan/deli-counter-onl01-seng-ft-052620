@@ -1,6 +1,6 @@
 def line(line)
   if line.size == 0 
-    puts "The line is currently empty."
+    return puts "The line is currently empty."
   end 
   
   rtn = "The line is currently:"
