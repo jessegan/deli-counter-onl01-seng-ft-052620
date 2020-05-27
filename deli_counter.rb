@@ -3,8 +3,11 @@ def line(line)
     return "The line is currently empty."
   end 
   
-  rtn = "The line is currently:"
-  line.each_with_index
+  rtn = "The line is currently: "
+  line.each_with_index do |name,i|
+    rtn << " #{i+1}. #{name}"
+  end
+  rtn
 end 
 
 def take_a_number(line,name)
